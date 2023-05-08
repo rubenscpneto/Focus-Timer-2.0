@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-sound-button-unselected: hsl(240, 9%, 89%);
+  --bg-sound-button-selected: hsl(194, 97%, 31%);
+  --selected-sound: white;
+  --main-color: hsl(240, 6%, 21%);
+
+}
+
+body {
+  color: var(--main-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  min-height: 100vh;
+  display: grid;
+}
+
+main {
+  display: flex;
+  gap: 19.2rem;
+
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-40px);
+}
+
+.hide {
+  display: none;
+}
+
+#timer {
+  display: flex;
+}
+
+#controls {
+  display: flex;
+  gap: 4rem;
+}
+
+#controls button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#sounds {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#sounds #top-line, #bottom-line {
+  height: 15.2rem;
+}
+
+#sounds button {
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border: none;
+  border-radius: 2.4rem;
+
+  background-color: var(--bg-sound-button-unselected);
+
+  cursor: pointer;
+}
+
+#sounds .forest-sound-on,
+#sounds .rain-sound-on,
+#sounds .coffeeshop-sound-on,
+#sounds .fireplace-sound-on {
+  background-color: var(--bg-sound-button-selected);
+}
