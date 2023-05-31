@@ -1,5 +1,5 @@
 
-# JavaScript HTML CSS | Focus Timer
+# JavaScript HTML CSS | Focus Timer 2.0
 
 A project that uses JS to make a Focus Timer to make better use of your time.
 
